@@ -1,0 +1,16 @@
+versao do .net sdk 7 e todos pacotes entro no mesmo
+
+--dir pra ter confirmao a pasta esta sendo executado
+
+ dotnet tool install --global dotnet-ef   -----Entityframework
+
+dotnet ef migrations add InitialCreate  ---------Este quando esta usando dotnet cli
+
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.0" />
+<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.0" />
+<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0" PrivateAssets="All" />
+<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0" />
+<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0" />
+<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
