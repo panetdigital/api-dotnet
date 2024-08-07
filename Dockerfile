@@ -9,8 +9,8 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG BUILD_CONFIGURATION=Release
 
 WORKDIR /src
-COPY ["api-dotnet/FinancialPlannerAPI.csproj", "api-dotnet/"]
-RUN dotnet restore "api-dotnet/FinancialPlannerAPI.csproj"
+COPY ["api-dotnet/tree/main/FinancialPlannerAPI.csproj", "api-dotnet/"]
+RUN dotnet restore "api-dotnet/tree/main/FinancialPlannerAPI.csproj"
 COPY . .
 WORKDIR "/src/FinancialPlannerAPI"
 RUN dotnet build "./FinancialPlannerAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
