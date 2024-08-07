@@ -7,12 +7,13 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG BUILD_CONFIGURATION=Release
-WORKDIR /src
-COPY ["FinancialPlannerAPI/FinancialPlannerAPI.csproj", "FinancialPlannerAPI/"]
-RUN dotnet restore "./FinancialPlannerAPI/FinancialPlannerAPI.csproj"
-COPY . .
-WORKDIR "/src/FinancialPlannerAPI"
+
+WORKDIR /app
+COPY api-dotnet/FinancialPlannerAPI.csproj .
+COPY api-dotnet .
+WORKDIR "/app/api-dotnet"
 RUN dotnet build "./FinancialPlannerAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
