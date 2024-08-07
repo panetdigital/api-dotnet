@@ -8,10 +8,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG BUILD_CONFIGURATION=Release
 
-WORKDIR /app
+WORKDIR /src
 COPY api-dotnet/FinancialPlannerAPI.csproj .
 COPY api-dotnet .
-WORKDIR "/app"
+WORKDIR "/src/FinancialPlannerAPI"
 RUN dotnet build "./FinancialPlannerAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 
