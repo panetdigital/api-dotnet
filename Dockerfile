@@ -11,7 +11,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /app
 COPY api-dotnet/FinancialPlannerAPI.csproj .
 COPY api-dotnet .
-WORKDIR "/app/api-dotnet"
+WORKDIR "/app"
 RUN dotnet build "./FinancialPlannerAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 
