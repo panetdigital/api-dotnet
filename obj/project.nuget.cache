@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SFkhPwkqJsA=",
+  "dgSpecHash": "cdBRdKikuG4=",
   "success": true,
   "projectFilePath": "C:\\Users\\cheri\\source\\repos\\FinancialPlannerAPI\\FinancialPlannerAPI\\FinancialPlannerAPI.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\cheri\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\cheri\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\cheri\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\cheri\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.1.nupkg.sha512",
     "C:\\Users\\cheri\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\cheri\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
     "C:\\Users\\cheri\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.0\\npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512",

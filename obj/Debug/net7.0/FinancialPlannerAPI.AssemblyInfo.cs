@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("732c9390-98f5-4c42-91d3-e3bfa5bd1fb4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinancialPlannerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cce1d7029a8143bb8e4f2b327d004cc65431fd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinancialPlannerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinancialPlannerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
